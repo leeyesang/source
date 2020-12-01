@@ -1,4 +1,4 @@
-package socketTest;
+package createCSV;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -19,12 +19,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import socketTest.JdbcConnection;
+
 public class CSVtest {// table을 select 후 담아서 .csv 파일로 변환
 
 	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) throws IOException {
 
-		Connection con; // DB 커넥션 용도
+		Connection con; // DB 커넥션 용도 
 		PreparedStatement selpst = null; // SELECT QY
 		ResultSet rs; // 결과를 담을 용도
 
