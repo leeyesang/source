@@ -21,7 +21,7 @@ public class ServertHandler extends Thread {
 	public ServertHandler(Socket socket, BufferedReader in, PrintWriter out) {
 		this.in = in;
 		this.out = out;
-		this.socket = socket;
+		this.socket = socket; 
 
 	}
 

@@ -17,7 +17,7 @@ public class Server {
 
 		// server is listening on port 13579
 		ServerSocket server_socket = new ServerSocket(13579);
-		int i = 0;
+		int i = 0;  
 
 		while (true) { // socket 연결대기 roof
 			Socket socket = null;
