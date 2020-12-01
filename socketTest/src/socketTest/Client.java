@@ -13,7 +13,7 @@ public class Client {
 
 		int cnt = 0;
 
-		// Server에 전송할 화일명
+		// Server에 전송할 화일명  
 		
 		File file = new File("C:\\new create csv\\Mach_info.csv");
 		//File file = new File("C:\\TB_BAS_RES2.txt");
