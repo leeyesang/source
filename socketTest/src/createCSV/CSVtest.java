@@ -1,17 +1,9 @@
 package createCSV;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
+
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -23,7 +15,7 @@ import socketTest.JdbcConnection;
 
 public class CSVtest {// table을 select 후 담아서 .csv 파일로 변환
 
-	@SuppressWarnings("unlikely-arg-type")
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 
 		Connection con; // DB 커넥션 용도 
